@@ -30,13 +30,12 @@ body, html {
   }
   
   /* Links within the navigations container */
-  .nav-link {
+  .nav-links .nav-link span {
     font-size: large;
     display: flex;
     align-items: center;
     justify-content: flex-end;
     flex-direction: row;
-    color: purple;
     padding: 5px 10px;
     gap: 15px;
     flex-wrap: nowrap;
