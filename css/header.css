@@ -30,7 +30,7 @@ body, html {
   }
   
   /* Links within the navigations container */
-  .nav-links .nav-link span {
+  .nav-links .nav-link {
     font-size: large;
     display: flex;
     align-items: center;
@@ -40,6 +40,8 @@ body, html {
     gap: 15px;
     flex-wrap: nowrap;
     min-width: 0;
+    font-family: 'Stencil', 'Stencil Std', sans-serif;
+    font-weight: 25;
 }
 
 .nav-links {
@@ -49,6 +51,9 @@ body, html {
   margin-right: 50px;
 }
 
+.nav-link {
+  font-weight: 100;
+}
 /* Icon styles within the links */
 .logo-text {
   display: flex;
@@ -58,18 +63,14 @@ body, html {
   flex-shrink: 0;
 }
 
-.logo-text {
-  font-size: 1.8rem;
-  font-weight: 600;
-  color: #4a9eff;
-  margin: 0;
+#logo-title {
+  font-size: 40px;
 }
 
-.logo-subtitle {
-  font-size: 0.9rem;
-  color: #888;
+#logo-subtitle {
+  font-size: 25px;
+  color: white;
   margin-top: 2px;
-  font-family: "Mozilla Headline", sans-serif;
 }
 
 /* MOBILE STYLES */
@@ -95,14 +96,7 @@ body, html {
     flex-shrink: 0;
   }
 
-  .logo-text .mozilla-headline {
-    font-size: 1.8rem;
-    font-weight: 600;
-    color: #4a9eff;
-    margin: 0;
-  }
-
-  .logo-subtitle {
+  #logo-subtitle {
     font-size: 0.9rem;
     color: #888;
     margin-top: 2px;
