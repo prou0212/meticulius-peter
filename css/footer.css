@@ -3,7 +3,7 @@ footer {
     padding: 0;
 }
 
-.footer-section {
+#footer-section {
     background-color: rgba(0, 0, 0, 0.7); 
     flex-basis: auto;
     height: 120px;
@@ -11,4 +11,5 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    color: white;
 }
