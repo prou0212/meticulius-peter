@@ -22,3 +22,16 @@ body {
     font-size: 20px;
     margin: 0 60vh 0 60vh;
 }
+#buttons {
+    display: block; 
+    width: 200px;
+    margin: 20px auto;
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: black;
+    background-color: white;
+    font-size: larger;
+}
