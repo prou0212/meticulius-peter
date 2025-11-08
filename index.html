@@ -48,9 +48,27 @@
                 </nav>
             </header>
            <main>
-                <div id="picture">
-                    <div id="picture-slideshow">
+                <div id="picture-slideshow">
+                    <div class="slide">
                         <img src="pictures/picture 1.jpg" alt="picture for slideshow">
+                        <div class="slide-text">
+                            <h2>Welcome to Meticulous Peter</h2>
+                            <span>Quality workmanship you can trust</span>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="pictures/picture 2.jpg" alt="picture for slideshow">
+                        <div class="slide-text">
+                            <h2>Expert Renovations</h2>
+                            <p>From small repairs to complete transformations</p>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="pictures/picture 3.jpg" alt="picture for slideshow">
+                        <div class="slide-text">
+                            <h2>Expert Renovations</h2>
+                            <p>From small repairs to complete transformations</p>
+                        </div>
                     </div>
                 </div>
 
@@ -106,7 +124,6 @@
                 navLinks.classList.toggle('active');
                 }
 
-            // Close menu when clicking on a link
             document.querySelectorAll('.nav-link').forEach(link => {
                 link.addEventListener('click', () => {
                     document.querySelector('.hamburger').classList.remove('active');
@@ -114,6 +131,16 @@
                 });
             });
             </script>
+
+            <script>
+                const slides = document.querySelectorAll('.slide');
+                let currentSlide = 0;
+
+                function showSlide(slideIndex) {
+
+                }
+            </script>
+            
         </body>
 
 </html>
