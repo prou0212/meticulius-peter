@@ -15,13 +15,13 @@
             <header>
                 <nav class="nav-bar">
                     <div class="nav-container">
-                    <a href="index.html">
-                        <div class="logo-text">
-                             <span class="stencil-text" id="logo-title">
-                                Meticulous Peter</span>
-                             <span class="stencil-text" id="logo-subtitle">A Man of Many Trades</span>
-                         </div>
-                    </a>
+                        <a href="index.html">
+                            <div class="logo-text">
+                                <span class="stencil-text" id="logo-title">
+                                    Meticulous Peter</span>
+                                <span class="stencil-text" id="logo-subtitle">A Man of Many Trades</span>
+                            </div>
+                        </a>
                         <div class="nav-links">
                             <a href="index.html" class="nav-link">
                                 <span>HOME</span>
@@ -39,6 +39,11 @@
                                 <span>CONTACT</span>
                             </a>
                         </div>
+                        <div class="hamburger" onclick="toggleMenu()">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
                     </div>
                 </nav>
             </header>
@@ -49,7 +54,7 @@
                     </div>
                 </div>
 
-                <div id="about-us-container">
+                <div id="container">
                     <div id="about-us">
                         <h2 class="stencil-text" id="main-titles">About Meticulous Peter</h2>
                             <span class="lato-regular" id="description">
@@ -74,12 +79,41 @@
                             
                     </div>
                 </div>
+
+                <div id="container">
+                    <div id="about-us">
+                        <h2 class="stencil-text" id="main-titles">Contact Us!</h2>
+                            <span class="lato-regular" id="description">
+                            Choose a reliable team for any renovation job with Meticulous Peter 
+                            but clicking the link below.
+                            </span>
+
+                            <a href="contact.html" class="stencil-text" id="buttons">Contact Us</a>
+                    </div>
+                </div>
            </main>
             <footer>
                 <div id="footer-section">
                     <span> &copy; 2025 Meticulous Peter - All Rights Reserved</span>
                 </div>
             </footer>
+            <script>
+                function toggleMenu() {
+                const hamburger = document.querySelector('.hamburger');
+                const navLinks = document.querySelector('.nav-links');
+    
+                hamburger.classList.toggle('active');
+                navLinks.classList.toggle('active');
+                }
+
+            // Close menu when clicking on a link
+            document.querySelectorAll('.nav-link').forEach(link => {
+                link.addEventListener('click', () => {
+                    document.querySelector('.hamburger').classList.remove('active');
+                    document.querySelector('.nav-links').classList.remove('active');
+                });
+            });
+            </script>
         </body>
 
 </html>

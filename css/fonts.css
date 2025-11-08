@@ -1,7 +1,6 @@
 .stencil-text {
   font-family: 'Stencil', 'Stencil Std', sans-serif;
   font-weight: normal;
-  color: black;
 }
 
 .nav-links .nav-link span {
@@ -9,12 +8,10 @@
   font-optical-sizing: auto;
   font-weight: 1000;
   font-style: normal;
-  color: white;
 }
 
 .lato-regular {
   font-family: 'Lato', sans-serif;
   font-weight: 400;
-  color: black;
   font-size: 30px;
 }
