@@ -123,6 +123,8 @@ body {
 #project-containers {
     flex: 1;
     max-width: 400px;
+    font-weight: lighter;
+    font-size: xx-large;
 }
 
 #project-containers h3{
