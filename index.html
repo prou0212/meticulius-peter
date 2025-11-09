@@ -17,7 +17,7 @@
                     <div class="nav-container">
                         <a href="index.html">
                             <div class="logo-text">
-                                <span class="stencil-text" id="logo-title">
+                                <span class="stencil-text" id="logo-title" style="color: black;">
                                     Meticulous Peter</span>
                                 <span class="stencil-text" id="logo-subtitle">A Man of Many Trades</span>
                             </div>
@@ -49,7 +49,7 @@
             </header>
            <main>
                 <div id="picture-slideshow">
-                    <div class="slide">
+                    <div class="slide active">
                         <img src="pictures/picture 1.jpg" alt="picture for slideshow">
                         <div class="slide-text">
                             <h2>Welcome to Meticulous Peter</h2>
@@ -93,7 +93,7 @@
                             style="display: block; font-style: italic; text-align: center; font-size: medium; margin: 2vh 0 0 0;">               
                             Owner of Meticulous Peter</span>
 
-                            <a href="about-us.html" class="stencil-text" id="buttons">About Us</a>
+                            <a href="about-us.html" class="stencil-text" id="buttons" style="color: black;">About Us</a>
                             
                     </div>
                 </div>
@@ -106,7 +106,7 @@
                             but clicking the link below.
                             </span>
 
-                            <a href="contact.html" class="stencil-text" id="buttons">Contact Us</a>
+                            <a href="contact.html" class="stencil-text" id="buttons" style="color: black;">Contact Us</a>
                     </div>
                 </div>
            </main>
@@ -137,8 +137,23 @@
                 let currentSlide = 0;
 
                 function showSlide(slideIndex) {
+                    slides.forEach(slide => {
+                        slide.classList.remove('active');
+                        slides[slideIndex];
+                    });
+                    slide.classList.add('active');
 
                 }
+
+                function nextSlide() {
+                    currentSlide++;
+                    if(currentSlide >= slides.length) {
+                        currentSlide = 0;
+                    }
+                    showSlide(currentSlide);
+                }
+                
+                setInterval(nextSlide, 10000);
             </script>
             
         </body>

@@ -13,32 +13,32 @@ body, html {
 
 /* Navigation bar and the flex box container */
 .nav-bar .nav-container {
-    color: black;
-    flex-direction: row;
-    text-align: right;
-    height: 120px;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center; 
-    z-index: 1000;
-  }
+  color: black;
+  flex-direction: row;
+  text-align: right;
+  height: 120px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; 
+  z-index: 1000;
+}
 
-  .nav-container a {
-    text-decoration: none;
-  }
+.nav-container a {
+  text-decoration: none;
+}
   
-  /* Links within the navigations container */
-  .nav-links .nav-link {
-    font-size: large;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    flex-direction: row;
-    padding: 5px 10px;
-    gap: 15px;
-    flex-wrap: nowrap;
-    min-width: 0;
+
+.nav-links .nav-link {
+  font-size: large;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-direction: row;
+  padding: 5px 10px;
+  gap: 15px;
+  flex-wrap: nowrap;
+  min-width: 0;
 }
 
 .nav-links {
@@ -52,7 +52,7 @@ body, html {
   font-weight: 100;
   color: black;
 }
-/* Icon styles within the links */
+
 .logo-text {
   display: flex;
   flex-direction: column;
@@ -89,7 +89,6 @@ body, html {
   border-radius: 2px;
 }
 
-/* Hamburger animation when active */
 .hamburger.active span:nth-child(1) {
   transform: rotate(-45deg) translate(-6px, 6px);
 }
@@ -104,8 +103,6 @@ body, html {
 
 /* MOBILE STYLES */
 @media screen and (max-width: 1260px) {
-
-  /* Navigation bar and container for mobile */
   .nav-bar .nav-container {
     display: flex;
     flex-direction: row;
@@ -116,7 +113,6 @@ body, html {
     padding: 10px 20px;
   }
   
-  /* Logo container for mobile */
   .logo-text {
     display: flex;
     flex-direction: column;
@@ -135,7 +131,6 @@ body, html {
     margin-top: 2px;
   }
 
-  /* Show hamburger on mobile - positioned on the right */
   .hamburger {
     display: flex;
     position: relative;
@@ -143,7 +138,6 @@ body, html {
     order: 2;
   }
 
-  /* Navigation links container for mobile */
   .nav-links {
     position: fixed;
     top: 0;
@@ -161,12 +155,10 @@ body, html {
     margin-right: 0;
   }
 
-  /* When menu is active, slide in from right */
   .nav-links.active {
     right: 0 !important;
   }
   
-  /* Link styles for mobile */
   .nav-link {
     display: flex;
     align-items: center;
