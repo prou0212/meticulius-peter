@@ -60,16 +60,18 @@
                         <img src="pictures/picture 2.jpg" alt="picture for slideshow">
                         <div class="slide-text">
                             <h2>Expert Renovations</h2>
-                            <p>From small repairs to complete transformations</p>
+                            <span>From small repairs to complete transformations</span>
                         </div>
                     </div>
                     <div class="slide">
                         <img src="pictures/picture 3.jpg" alt="picture for slideshow">
                         <div class="slide-text">
                             <h2>Expert Renovations</h2>
-                            <p>From small repairs to complete transformations</p>
+                            <span>From small repairs to complete transformations</span>
                         </div>
                     </div>
+                        <button class="slider-btn prev-btn" onclick="prevSlide()">&#10094;</button>
+                        <button class="slider-btn next-btn" onclick="nextSlide()">&#10095;</button>
                 </div>
 
                 <div id="container">
@@ -141,7 +143,7 @@
                         slide.classList.remove('active');
                         slides[slideIndex];
                     });
-                    slide.classList.add('active');
+                    slides[slideIndex].classList.add('active');
 
                 }
 
