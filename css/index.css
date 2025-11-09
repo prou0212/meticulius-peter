@@ -51,6 +51,7 @@ body {
     font-size: 48px;
     margin: 0 0 15px 0;
     font-family: 'Stencil', 'Stencil Std', sans-serif;
+    font-weight: lighter;
 }
 
 .slide-text span {
@@ -59,7 +60,6 @@ body {
     font-family: 'Lato', sans-serif;
 }
 
-/* Slider navigation buttons */
 .slider-btn {
     position: absolute;
     top: 50%;
@@ -89,6 +89,7 @@ body {
 #main-titles {
     text-align: center;
     font-size: 50px;
+    margin: 0 0 40px 0;
 }
 
 #description {
@@ -110,6 +111,22 @@ body {
     border-color: black;
     background-color: white;
     font-size: larger;
+}
+
+#project-containers-all {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+}
+
+#project-containers {
+    flex: 1;
+    max-width: 400px;
+}
+
+#project-containers h3{
+    text-align: center;
 }
 
 @media screen and (max-width: 999px) {
