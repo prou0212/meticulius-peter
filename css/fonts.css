@@ -15,3 +15,10 @@
   font-weight: 400;
   font-size: 30px;
 }
+
+.inter-regular {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+}
