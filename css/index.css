@@ -115,9 +115,9 @@ body {
 
 #main-projects-container {
     margin: 40px 100px 40px 100px;
-    border-style: solid;
-    border-radius: 10px;
     padding: 60px 0 60px 0;
+    border: none;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
 }
 
 #project-containers-all {
@@ -136,6 +136,14 @@ body {
 
 #project-containers h3{
     text-align: center;
+}
+
+#project-containers img {
+    display: block;
+    margin: 0 auto;
+    height: 350px;
+    width: 350px;
+    min-height: 50px;
 }
 
 @media screen and (max-width: 999px) {
