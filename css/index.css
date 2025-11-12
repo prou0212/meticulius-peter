@@ -12,7 +12,6 @@ body {
     overflow: hidden;
 }
 
-/* Individual slide */
 .slide {
     position: absolute;
     width: 100%;
@@ -32,7 +31,6 @@ body {
     border: 0;
 }
 
-/* Text overlay */
 .slide-text {
     position: absolute;
     top: 50%;
@@ -171,7 +169,7 @@ body {
     justify-content: center;
 }
 
-@media screen and (max-width: 999px) {
+@media screen and (max-width: 1400px) {
 
     #picture-slideshow {
         height: 300px;
