@@ -146,7 +146,7 @@ body {
     width: 350px;
 }
 
-#about-us-container, #contact-us-container {
+#about-us-container {
     display: flex;
     justify-content: center;
 }
@@ -154,10 +154,6 @@ body {
 #about-us-title {
     width: 50%;
     display: flex;
-}
-
-#contact-us-title {
-    width: 50%;
 }
 
 #about-us-title img {
@@ -168,7 +164,7 @@ body {
     margin: 0;
 }
 
-#about-us-description, #contact-us-description {
+#about-us-description {
     width: 50%;
     display: flex;
     flex-direction: column;
