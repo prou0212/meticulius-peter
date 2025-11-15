@@ -38,7 +38,7 @@ body {
     transform: translate(-50%, -50%);
     text-align: center;
     color: white;
-    background-color: rgba(0, 0, 0, 0.5);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.7));
     padding: 30px 50px;
     border-radius: 10px;
     z-index: 2;
@@ -69,6 +69,7 @@ body {
     cursor: pointer;
     z-index: 10;
     transition: background-color 0.3s;
+    border-radius: 8px;
 }
 
 .slider-btn:hover {
