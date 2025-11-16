@@ -26,7 +26,6 @@ body, html {
 .nav-container a {
   text-decoration: none;
 }
-  
 
 .nav-links .nav-link {
   font-size: large;
@@ -50,6 +49,22 @@ body, html {
 .nav-link {
   font-weight: 100;
   color: black;
+  position: relative;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background-color: #c9a26a;
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+  width: 100%;
 }
 
 .logo-text {

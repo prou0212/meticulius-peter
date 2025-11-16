@@ -116,6 +116,7 @@ body {
     padding: 60px 0 60px 0;
     border: none;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
 }
 
 .project-containers-all {
@@ -131,11 +132,33 @@ body {
     max-width: 400px;
     font-weight: lighter;
     font-size: xx-large;
+    background-color: #edecea;
+    position: relative;
+    z-index: 1;
 }
 
-.project-containers h3 {
+.projects-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    padding: 0;  /* No padding needed */
+    background: none;  /* Remove the box */
+    color: white;
     text-align: center;
-    margin: 15px 50px 5px 50px;
+}
+
+.projects-text h3 {
+    margin: 0;
+    font-size: 60px;  /* Make it bigger since there's no box */
+    font-weight: 700;  /* Bold for impact */
+    color: white;
+    text-shadow: 
+        3px 3px 8px rgba(0, 0, 0, 1),      /* Fully opaque black */
+        6px 6px 16px rgba(0, 0, 0, 0.9),   /* Very dark */
+        0 0 20px rgba(0, 0, 0, 0.8);       /* Glow effect */
+    letter-spacing: 1px;  /* Slight spacing for readability */
 }
 
 .project-containers img {
@@ -143,6 +166,17 @@ body {
     margin: 0 auto;
     height: 350px;
     width: 350px;
+    border-radius: 10px;
+    object-fit: cover;
+    transition: transform 0.3s ease;  /* Define WHAT transitions and HOW */
+}
+
+.project-containers img:hover {
+    transform: scale(1.05);  /* Image zooms 5% on hover */
+}
+
+.project-containers img:hover {
+    transition: all;
 }
 
 #about-us-container {
@@ -169,7 +203,7 @@ body {
     flex-direction: column;
     justify-content: center;
     padding: 50px 50px 50px 50px;
-    background-color: rgb(203, 142, 99);
+    background-color: #c9a26a;
 }
 
 #contact-info {
@@ -213,7 +247,7 @@ body {
         margin: 50px 50px 50px 50px;
     }
 
-    #project-containers-all {
+    .project-containers-all {
         display: flex;
         flex-direction: column;
         align-items: center;
