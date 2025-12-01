@@ -5,6 +5,7 @@ body {
     background-color: #edecea
 }
 
+/* Picture Slideshow Attributes */
 #picture-slideshow {
     position: relative;
     width: 100%;
@@ -84,6 +85,27 @@ body {
     right: 20px;
 }
 
+/* Clickable Buttons */
+.buttons {
+    display: block; 
+    width: 200px;
+    margin: 20px auto;
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    border-style: ridge;
+    border-radius: 1.5px;
+    border-color: black;
+    background-color: white;
+    font-size: larger;
+}
+
+#about-us-button {
+    color: black;
+    background-color: transparent;
+}
+
+/* Titles and Descriptions */
 .main-titles {
     text-align: center;
     font-size: 50px;
@@ -97,18 +119,11 @@ body {
     margin: 40px 40px 40px 40px
 }
 
-#buttons {
-    display: block; 
-    width: 200px;
-    margin: 20px auto;
-    padding: 10px 10px;
-    text-align: center;
-    text-decoration: none;
-    border-style: ridge;
-    border-radius: 1.5px;
-    border-color: black;
-    background-color: white;
-    font-size: larger;
+/* Projects containers */
+#experts-title {
+    font-size: 50px; 
+    text-align: center; 
+    margin: 0 0 0 0;
 }
 
 #main-projects-container {
@@ -179,14 +194,10 @@ body {
     transition: all;
 }
 
+/* About Us Section */
 #about-us-container {
     display: flex;
     justify-content: center;
-}
-
-.left-side {
-    width: 50%;
-    display: flex;
 }
 
 .left-side img {
@@ -197,6 +208,36 @@ body {
     margin: 0;
 }
 
+#right-about-us {
+    background-color: #c9a26a;
+    flex-direction: column;
+}
+
+#about-us-description {
+    color: #3d3d3d;
+}
+
+#peter-text {
+    display: block;
+    text-align: center;
+    font-size: large;
+    margin: 5vh 0 0 0;
+}
+
+#owner-text {
+    display: block;
+    font-style: italic;
+    text-align: center;
+    font-size: medium;
+    margin: 2vh 0 0 0;
+}
+
+/* Left and Right Dividers */
+.left-side {
+    width: 50%;
+    display: flex;
+}
+
 .right-side {
     width: 50%;
     display: flex;
@@ -204,6 +245,7 @@ body {
     padding: 50px 50px 50px 50px;
 }
 
+/* Contact Us Section */
 #contact-us-section {
     margin: 40px 40px 40px 40px;
 }
@@ -238,26 +280,31 @@ body {
     text-align: center;
 }
 
-#contact-us-section .right-side span:nth-child(odd) {
-    font-weight: bold;
-    font-size: 24px;
-    margin-top: 20px;
-}
-
-#contact-us-section .right-side span:nth-child(even) {
-    font-size: 20px;
-}
-
-#contact-info {
-    display: flex;
-    justify-content: center;
-}
-
 #phone-contact, #email-contact {
     display: flex;
     justify-content: center;
     padding: 10px 30px 10px 30px;
     font-size: xx-large;
+}
+
+.contact-header {
+    font-size: 40px;
+}
+
+.contact-info {
+    font-size: 30px;
+}
+
+#mail-link {
+    color: black;
+    text-decoration: none;
+    font-size: 30px;
+}
+
+#contact-hours {
+    font-size: 30px;
+    padding: 0%;
+    margin: 0;
 }
 
 @media screen and (max-width: 1400px) {

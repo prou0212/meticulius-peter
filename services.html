@@ -10,6 +10,7 @@
         <link href="css/footer.css" rel="stylesheet" type="text/css">
         <link href="css/fonts.css" rel="stylesheet" type="text/css">
         <link href="css/index.css" rel="stylesheet" type="text/css">
+        <link href="css/services.css" rel="stylesheet" type="text/css">
     </head>  
         <body>
             <header>
@@ -51,11 +52,57 @@
                 </nav>
             </header>
            <main>
-            </main>
+                <div id="services-header" style="background-color: #c9a26a;">
+                    <div class="stencil-text" id="services-text">
+                        <h2>Services</h2>
+                    </div>
+                </div>
+
+                <div id="contact-us-section">
+                    <div class="left-side">
+                        <h2 class="bodoni-moda-sc-regular main-titles">Contact Us!</h2>
+                        <span class="lato-regular description">
+                        Ready to bring your vision to life? Contact Meticulous Peter today for a free consultation. 
+                        Whether it's a small repair or a complete renovation, we're here to deliver quality workmanship 
+                        you can trust. We pride ourselves on clear communication, timely project completion, and treating 
+                        every home as if it were our own. From the initial consultation to the final walk-through, we're 
+                        committed to exceeding your expectations and making the renovation process as smooth and stress-free 
+                        as possible.
+                        </span>
+                    </div>
+                    <div class="right-side">
+                        <span class="bodoni-moda-sc-regular" style="font-size: 40px;">Telephone: </span>
+                        <span class="bodoni-moda-sc-regular" style="font-size: 30px;">613-327-4221</span>
+                        <span class="bodoni-moda-sc-regular" style="font-size: 40px;">Email: </span>
+                        <a href="mailto:meticulouspeter@gmail.com" class="bodoni-moda-sc-regular" style="color: black; text-decoration: none; font-size: 30px;">
+                            meticulouspeter@gmail.com</a>
+                        <span class="bodoni-moda-sc-regular" style="font-size: 40px;">Hours: </span>
+                        <span class="bodoni-moda-sc-regular" style="font-size: 30px;">Monday to Friday</span>
+                        <span class="bodoni-moda-sc-regular" style="font-size: 30px; padding: 0%; margin: 0;">9am-7pm</span>
+                    </div>
+                </div>
+           </main>
             <footer>
                 <div id="footer-section">
                     <span> &copy; 2025 Meticulous Peter - All Rights Reserved</span>
                 </div>
             </footer>
+            <script>
+                function toggleMenu() {
+                const hamburger = document.querySelector('.hamburger');
+                const navLinks = document.querySelector('.nav-links');
+    
+                hamburger.classList.toggle('active');
+                navLinks.classList.toggle('active');
+                }
+
+            document.querySelectorAll('.nav-link').forEach(link => {
+                link.addEventListener('click', () => {
+                    document.querySelector('.hamburger').classList.remove('active');
+                    document.querySelector('.nav-links').classList.remove('active');
+                });
+            });
+            </script>
         </body>
 </html>
+
