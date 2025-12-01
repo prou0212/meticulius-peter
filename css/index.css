@@ -196,7 +196,7 @@ body {
 }
 
 /* About Us Section */
-#about-us-container {
+#default-container {
     display: flex;
     justify-content: center;
 }
@@ -343,7 +343,7 @@ body {
         align-items: center;
     }
 
-    #about-us-container {
+    #default-container {
         display: flex;
         flex-direction: column;
         justify-content: center;
