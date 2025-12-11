@@ -160,14 +160,22 @@
     margin: 0 0 0 0;
 }
 
+#about-us-container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+}
+
 #right-about-us {
     background-color: #c9a26a;
     flex-direction: column;
+    padding: 50px 50px 50px 50px;
 }
 
 #about-us-description {
     color: #3d3d3d;
 }
+
 
 #peter-text {
     display: block;
@@ -202,13 +210,6 @@
         padding: 20px 30px;
     }
 
-    .description {
-        display: block;
-        text-align: center;
-        font-size: 20px;
-        margin: 40px 40px 40px 40px
-    }
-
     #main-projects-container {
         margin: 50px 50px 50px 50px;
     }
@@ -219,48 +220,5 @@
         align-items: center;
     }
 
-    #default-container {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-
-    .left-side {
-        width: 100%;
-        display: flex;
-    }
-
-    .right-side {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        padding: 2% 2% 2% 2%;
-    }
-
-    #contact-info {
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        padding: 3% 0 3% 0;
-    }
-
-    #contact-info img{
-        align-self: center;
-        width: 50px;
-        height: auto;
-    }
-
-    #contact-us-section {
-        flex-direction: column;
-        gap: 40px;
-        text-align: center;
-    }
-
-    #contact-us-section .left-side,
-    #contact-us-section .right-side {
-        width: 100%;
-        padding: 20px;
-        border-left: none;
-    }
+    
 }
