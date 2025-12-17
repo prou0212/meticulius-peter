@@ -14,10 +14,11 @@ body {
     text-align: center;
     text-decoration: none;
     border-style: ridge;
-    border-radius: 1.5px;
+    border-radius: 5px;
     border-color: black;
-    background-color: white;
+    background-color: transparent;
     font-size: larger;
+    color: black;
 }
 
 /* Titles and Descriptions */
@@ -68,6 +69,14 @@ body {
     display: flex;
     justify-content: center;
     padding: 0;
+}
+
+.left-side-description {
+    background-color: #c9a26a;
+}
+
+.right-side-description {
+    background-color: rgb(234, 225, 225);
 }
 
 /* Contact Us Section */
