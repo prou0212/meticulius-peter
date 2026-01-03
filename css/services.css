@@ -1,17 +1,18 @@
-/* Description: This CSS file styles the services page
+/* Description: This CSS file styles the services page. 
+These are only for the services page. 
 
 @author: Jesse Proulx
 @date: 2025
 */
 
-#services-header {
+.services-header {
     width: 100%;
     height: 200px;
     overflow: hidden;
     background-color: #31302e;
 }
 
-#services-text {
+.services-text {
     text-align: center;
     font-size: 40px;
     margin: 65px 50px 50px 50px;
