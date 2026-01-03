@@ -1,57 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Home - Meticulous Peter</title>
+        <title>Meticulous Peter | Man of Many Trades</title>
         <meta charset="UTF-8">
-        <meta name="author" content="Jesse Proulx">
+        <meta name="author" content="Jesse Proulx"> 
+
+        <link rel="icon" type="image/png" href="pictures/icon/hammer.png">
         
         <!--StyleSheets-->
-        <link href="css/footer.css" rel="stylesheet" type="text/css">
-        <link href="css/index.css" rel="stylesheet" type="text/css">
-        <link href="css/fonts.css" rel="stylesheet" type="text/css">
         <link href="css/header.css" rel="stylesheet" type="text/css">
+        <link href="css/footer.css" rel="stylesheet" type="text/css">
+        <link href="css/fonts.css" rel="stylesheet" type="text/css">
+        <link href="css/services.css" rel="stylesheet" type="text/css">
+        <link href="css/basic-styling.css" rel="stylesheet" type="text/css">
     </head>  
         <body>
             <header>
                 <nav class="nav-bar">
                     <div class="nav-container">
-                    <a href="index.html">
-                        <div class="logo-text">
-                             <span class="stencil-text" id="logo-title">
-                                Meticulous Peter</span>
-                             <span class="stencil-text" id="logo-subtitle">A Man of Many Trades</span>
-                         </div>
-                    </a>
+                        <a href="index.html">
+                            <div class="logo-text">
+                                <span class="stencil-text" id="logo-title" style="color: black;">
+                                    Meticulous Peter</span>
+                                <span class="stencil-text" id="logo-subtitle">A Man of Many Trades</span>
+                            </div>
+                        </a>
                         <div class="nav-links">
                             <a href="index.html" class="nav-link">
-                                <span>Home</span>
+                                <span>HOME</span>
                             </a>
                             <a href="services.html" class="nav-link">
-                                <span>Services</span>
+                                <span>SERVICES</span>
                             </a>
                             <a href="about-us.html" class="nav-link">
-                                <span>About Us</span>
+                                <span>ABOUT US</span>
                             </a>
                             <a href="reviews.html" class="nav-link">
-                                <span>Reviews</span>
+                                <span>REVIEWS</span>
                             </a>
-                            <a href="contact.html" class="nav-link">
-                                <span>Contact</span>
+                            <a href="gallery.html" class="nav-link">
+                                <span>GALLERY</span>
                             </a>
+                            <a href="#contact-us-section" class="nav-link">
+                                <span>CONTACT US</span>
+                            </a>
+                        </div>
+                        <div class="hamburger" onclick="toggleMenu()">
+                            <span></span>
+                            <span></span>
+                            <span></span>
                         </div>
                     </div>
                 </nav>
             </header>
            <main>
-                
-                    
+                <div class="top-header">
+                    <div class="picture-header">
+                        <img src="pictures/services/header.png" alt="services picture">
+                    </div>
+                    <div class="picture-text">
+                        <h2 class="stencil-text">Services</h2>
+                        <span class="inter-regular">Meticulous Peter provides a variety of services.<br>
+                            Expert renovations, repairs, and remodeling for your home. <br> 
+                            Quality craftsmanship and reliable service on every project, big or small.</span> 
+                    </div>
+                </div>
+
+                <div id="contact-us-section">
+                    <div class="left-side">
+                        <h2 class="bodoni-moda-sc-regular main-titles">Contact Us!</h2>
+                        <span class="lato-regular description">
+                        Ready to bring your vision to life? Contact Meticulous Peter today for a free consultation. 
+                        Whether it's a small repair or a complete renovation, we're here to deliver quality workmanship 
+                        you can trust. We pride ourselves on clear communication, timely project completion, and treating 
+                        every home as if it were our own. From the initial consultation to the final walk-through, we're 
+                        committed to exceeding your expectations and making the renovation process as smooth and stress-free 
+                        as possible.
+                        </span>
+                    </div>
+                    <div class="right-side">
+                        <span class="bodoni-moda-sc-regular contact-header">Telephone: </span>
+                        <span class="bodoni-moda-sc-regular contact-info">613-327-4221</span>
+                        <span class="bodoni-moda-sc-regular contact-header">Email: </span>
+                        <a href="mailto:meticulouspeter@gmail.com" class="bodoni-moda-sc-regular" id="mail-link">
+                            meticulouspeter@gmail.com</a>
+                        <span class="bodoni-moda-sc-regular contact-header">Hours: </span>
+                        <span class="bodoni-moda-sc-regular contact-info">Monday to Friday</span>
+                        <span class="bodoni-moda-sc-regular" id="contact-hours">9am-7pm</span>
+                    </div>
+                </div>
            </main>
             <footer>
-                <div class="footer-section">
+                <div id="footer-section">
                     <span> &copy; 2025 Meticulous Peter - All Rights Reserved</span>
                 </div>
             </footer>
-        </body>
+            <script>
+                function toggleMenu() {
+                const hamburger = document.querySelector('.hamburger');
+                const navLinks = document.querySelector('.nav-links');
+    
+                hamburger.classList.toggle('active');
+                navLinks.classList.toggle('active');
+                }
 
+            document.querySelectorAll('.nav-link').forEach(link => {
+                link.addEventListener('click', () => {
+                    document.querySelector('.hamburger').classList.remove('active');
+                    document.querySelector('.nav-links').classList.remove('active');
+                });
+            });
+            </script>
+        </body>
 </html>
 
