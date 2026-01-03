@@ -101,6 +101,7 @@ body {
     position: absolute;
     top: 15%;
     left: 10%;
+    max-width: 650px;
 }
 
 .picture-text h2 {
@@ -170,6 +171,10 @@ body {
     margin: 0;
 }
 
+#footer-section {
+    text-align: center;
+}
+
 @media screen and (max-width: 1200px) {
 
     body {
@@ -228,6 +233,12 @@ body {
         padding: 40px 30px;
         box-sizing: border-box;
         order: 2;
+    }
+
+    .picture-text {
+        top: 8%;
+        left: 10%;
+        max-width: 450px;
     }
 
     #contact-info {
