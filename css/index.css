@@ -181,7 +181,7 @@
 #peter-text {
     display: block;
     text-align: center;
-    font-size: large;
+    font-size: 25px;
     margin: 5vh 0 0 0;
 }
 
@@ -189,7 +189,7 @@
     display: block;
     font-style: italic;
     text-align: center;
-    font-size: medium;
+    font-size: 20px;
     margin: 2vh 0 0 0;
 }
 
