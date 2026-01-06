@@ -13,6 +13,33 @@
     font-size: 25px;
 }
 
+#brown-container {
+    background-color: #c9a26a;
+}
+
+#grey-container {
+    background-color: #383633;
+    padding: 2% 2% 0 2%;
+}
+
+#owner-quote, #owner-name {
+    display: block;
+    text-align: center;
+    color: aliceblue;
+}
+
+#owner-quote {
+    font-size: 40px;
+    font-style: italic;
+    margin: 0;
+}
+
+#owner-name {
+    font-size: 30px;
+    margin: 0;
+    padding: 40px 40px 40px 40px;
+}
+
 @media screen and (max-width: 1400px) {
     #about-us-image {
         height: 100%;
