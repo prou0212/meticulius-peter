@@ -15,6 +15,28 @@
 
 #brown-container {
     background-color: #c9a26a;
+    padding: 60px 200px;
+    margin: 0;
+}
+
+#cheesy-tagline-1 {
+    text-align: center;
+    font-size: 70px;
+    font-weight: 600;
+    margin: 20px;
+}
+
+#cheesy-tagline-2 {
+    text-align: center;
+    font-size: 60px;
+    margin: 20px;
+    font-weight: 100;
+}
+
+#hero-description {
+    text-align: center;
+    font-size: 25px;
+    padding: 30px;
 }
 
 #grey-container {

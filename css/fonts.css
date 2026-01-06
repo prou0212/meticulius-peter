@@ -1,3 +1,4 @@
+
 .stencil-text {
   font-family: 'Stencil', 'Stencil Std', sans-serif;
   font-weight: normal;
@@ -23,5 +24,12 @@
   font-family: "Bodoni Moda SC", serif;
   font-optical-sizing: auto;
   font-weight: 800;
+  font-style: normal;
+}
+
+.zalando-sans-expanded-regular {
+  font-family: "Zalando Sans Expanded", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
   font-style: normal;
 }
