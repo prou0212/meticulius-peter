@@ -99,24 +99,19 @@ body {
 
 .picture-text {
     position: absolute;
-    top: 15%;
+    top: 25%;
     left: 10%;
     max-width: 650px;
 }
 
 .picture-text h2 {
-    font-size: 75px;
+    font-size: 100px;
     text-align: left;
-}
-
-.picture-text span {
-    font-size: 30px;
 }
 
 /* Contact Us Section */
 #contact-us-section {
     margin: 40px 40px 40px 40px;
-    /* height: 500px; */
 }
 
 #contact-us-section {
@@ -236,9 +231,20 @@ body {
     }
 
     .picture-text {
-        top: 8%;
-        left: 10%;
         max-width: 450px;
+        top: 20%;
+        left: 10%;
+    }
+
+    .picture-text h2 {
+        font-size: 100px;
+        text-align: center;
+    }
+
+    .picture-header img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
     }
 
     #contact-info {

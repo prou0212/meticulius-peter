@@ -72,10 +72,12 @@
 }
 
 .prev-btn {
+    top: 55%;
     left: 20px;
 }
 
 .next-btn {
+    top: 55%;
     right: 20px;
 }
 
@@ -106,7 +108,7 @@
     max-width: 400px;
     font-weight: lighter;
     font-size: xx-large;
-    background-color: #edecea;
+    background-color: white;
     position: relative;
     z-index: 1;
 }
@@ -219,5 +221,19 @@
         align-items: center;
     }
 
-    
+    .slider-btn {
+        font-size: 20px;
+        padding: 10px 15px;
+    }
+
+    .prev-btn {
+        top: 35%;
+        left: 5px;
+    }
+
+    .next-btn {
+        top: 35%;
+        right: 5px;
+    }
+
 }
