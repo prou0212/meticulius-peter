@@ -4,22 +4,7 @@
   font-weight: normal;
 }
 
-.lato-regular {
-  font-family: 'Lato', sans-serif;
-  font-size: 16px;
-  font-weight: 400;
-  margin: 0 0 20px 0;
-  text-align: center;
-  line-height: 1.4;
-}
-
-.inter-regular {
-  font-family: "Inter", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 100;
-  font-style: normal;
-}
-
+/* Links */
 .bodoni-moda-sc-regular, .nav-links .nav-link span {
   font-family: "Bodoni Moda SC", serif;
   font-optical-sizing: auto;
@@ -27,9 +12,29 @@
   font-style: normal;
 }
 
-.zalando-sans-expanded-regular {
-  font-family: "Zalando Sans Expanded", sans-serif;
+/* Text */
+.noto-serif-regular {
+  font-family: "Noto Serif", serif;
   font-optical-sizing: auto;
   font-weight: 200;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+/*Headers */
+.merriweather-regular {
+  font-family: "Merriweather", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+/* under headers*/
+.scope-one-regular {
+  font-family: "Scope One", serif;
+  font-weight: 400;
   font-style: normal;
 }
