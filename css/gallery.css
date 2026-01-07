@@ -39,3 +39,39 @@
     height: 315px;
     width: 315px;
 }
+
+@media screen and (max-width: 1380px) {
+    
+    .kitchen-container, .basement-container,
+    .fencing-container, .decks-container {
+        height: 700px;
+        margin: 0;
+        padding: 20px 50px;
+        font-size: 40px;
+        text-align: center;
+    }
+
+    .picture-display {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    
+    .picture-display img {
+        object-fit: cover;
+        height: 270px;
+        width: 270px;
+    }
+}
+
+@media screen and (max-width: 680px) { 
+    .kitchen-container, .basement-container,
+    .fencing-container, .decks-container {
+        height: 1250px;
+        margin: 0;
+        padding: 20px 100px;
+        font-size: 40px;
+        text-align: center;
+    }
+}
