@@ -99,8 +99,8 @@ body {
 
 .picture-text {
     position: absolute;
-    top: 25%;
-    left: 10%;
+    top: 150px;
+    left: 100px;
     max-width: 650px;
 }
 
@@ -232,8 +232,8 @@ body {
 
     .picture-text {
         max-width: 450px;
-        top: 20%;
-        left: 10%;
+        top: 125px;
+        left: 70px;
     }
 
     .picture-text h2 {
@@ -281,10 +281,5 @@ body {
     .right-side #buttons {
         margin: 20px auto;
     }
-    
-    .picture-text span {
-        top: 5%;
-        left: 10%;
-        line-height: 40px;
-    }
+
 }
