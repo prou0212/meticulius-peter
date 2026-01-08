@@ -40,6 +40,89 @@
     width: 315px;
 }
 
+#lightbox {
+    display: none;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.9);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+}
+
+#lightbox-img {
+    max-width: 90%;
+    max-height: 90%;
+    object-fit: contain;
+    display: block;
+    margin: auto;
+    border-radius: 5px;
+}
+
+#close-btn {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 50px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    z-index: 1001;
+}
+
+#close-btn:hover {
+    transform: scale(1.2);
+}
+
+#expand-btn {
+    position: absolute;
+    top: 20px;
+    left: 30px;
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    z-index: 1001;
+}
+
+#expand-btn:hover {
+    transform: scale(1.2);
+}
+
+#left-btn, #right-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.2);
+    border: none;
+    color: white;
+    font-size: 40px;
+    padding: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    z-index: 1001;
+}
+
+#left-btn:hover, #right-btn:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+#left-btn {
+    left: 30px;
+}
+
+#right-btn {
+    right: 30px;
+}
+
 @media screen and (max-width: 1380px) {
     
     .kitchen-container, .basement-container,
@@ -50,7 +133,7 @@
         font-size: 40px;
         text-align: center;
     }
-
+    
     .picture-display {
         display: flex;
         justify-content: center;
@@ -62,6 +145,30 @@
         object-fit: cover;
         height: 270px;
         width: 270px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #lightbox-img {
+        max-width: 95%;
+        max-height: 95%;
+    }
+
+    #close-btn, #expand-btn {
+        font-size: 35px;
+    }
+
+    #left-btn, #right-btn {
+        font-size: 30px;
+        padding: 15px;
+    }
+
+    #left-btn {
+        left: 10px;
+    }
+
+    #right-btn {
+        right: 10px;
     }
 }
 

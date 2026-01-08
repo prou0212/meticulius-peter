@@ -134,6 +134,14 @@
                     Website by Jesse Proulx</span>
                 </div>
             </footer>
+
+            <div id="lightbox">
+                <button id="expand-btn">⛶</button>
+                <button id="close-btn">X</button>
+                <img id="lightbox-img" src="" alt="">
+                <button id="left-btn">&#10096;</button>
+                <button id="right-btn">&#10097;</button>
+            </div>
             <script>
                 function toggleMenu() {
                 const hamburger = document.querySelector('.hamburger');
@@ -148,6 +156,109 @@
                     document.querySelector('.hamburger').classList.remove('active');
                     document.querySelector('.nav-links').classList.remove('active');
                 });
+            });
+            </script>
+            <script>
+
+            // Get all gallery images
+            const galleryImages = document.querySelectorAll('.picture-display img');
+            const lightbox = document.getElementById('lightbox');
+            const lightboxImg = document.getElementById('lightbox-img');
+            const closeBtn = document.getElementById('close-btn');
+            const expandBtn = document.getElementById('expand-btn');
+            const leftBtn = document.getElementById('left-btn');
+            const rightBtn = document.getElementById('right-btn');
+
+            // Store all image sources in an array
+            let allImages = [];
+            let currentIndex = 0;
+
+            // Populate the images array
+            galleryImages.forEach((img, index) => {
+                allImages.push({
+                    src: img.src,
+                    alt: img.alt
+                });
+                
+                // Add click event to each image
+                img.addEventListener('click', () => {
+                    openLightbox(index);
+                });
+                
+                // Add hover effect cursor
+                img.style.cursor = 'pointer';
+            });
+
+            // Open lightbox function
+            function openLightbox(index) {
+                currentIndex = index;
+                lightboxImg.src = allImages[currentIndex].src;
+                lightboxImg.alt = allImages[currentIndex].alt;
+                lightbox.style.display = 'flex';
+                document.body.style.overflow = 'hidden'; // Prevent scrolling
+            }
+
+            // Close lightbox function
+            function closeLightbox() {
+                lightbox.style.display = 'none';
+                document.body.style.overflow = 'auto'; // Re-enable scrolling
+            }
+
+            // Navigate to previous image
+            function previousImage() {
+                currentIndex--;
+                if (currentIndex < 0) {
+                    currentIndex = allImages.length - 1; // Loop to last image
+                }
+                lightboxImg.src = allImages[currentIndex].src;
+                lightboxImg.alt = allImages[currentIndex].alt;
+            }
+
+            // Navigate to next image
+            function nextImage() {
+                currentIndex++;
+                if (currentIndex >= allImages.length) {
+                    currentIndex = 0; // Loop to first image
+                }
+                lightboxImg.src = allImages[currentIndex].src;
+                lightboxImg.alt = allImages[currentIndex].alt;
+            }
+
+            // Toggle fullscreen
+            function toggleFullscreen() {
+                if (!document.fullscreenElement) {
+                    lightbox.requestFullscreen().catch(err => {
+                        console.log('Fullscreen error:', err);
+                    });
+                } else {
+                    document.exitFullscreen();
+                }
+            }
+
+            // Event listeners for buttons
+            closeBtn.addEventListener('click', closeLightbox);
+            expandBtn.addEventListener('click', toggleFullscreen);
+            leftBtn.addEventListener('click', previousImage);
+            rightBtn.addEventListener('click', nextImage);
+
+            // Close lightbox when clicking on the dark background (not on image or buttons)
+            lightbox.addEventListener('click', (e) => {
+                if (e.target === lightbox) {
+                    closeLightbox();
+                }
+            });
+
+            // Keyboard navigation
+            document.addEventListener('keydown', (e) => {
+                if (lightbox.style.display === 'flex') {
+                    if (e.key === 'Escape') {
+                        closeLightbox();
+                    } else if (e.key === 'ArrowLeft') {
+                        previousImage();
+                    } else if (e.key === 'ArrowRight') {
+                        nextImage();
+                    }
+                }
             });
             </script>
         </body>
