@@ -71,11 +71,7 @@ body {
     padding: 0;
 }
 
-.left-side-description {
-    background-color: #c9a26a;
-}
-
-.right-side-description {
+.left-side-description, .right-side-description {
     background-color: white;
 }
 
