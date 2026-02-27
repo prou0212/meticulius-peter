@@ -38,6 +38,12 @@
     padding: 30px;
 }
 
+#hero-image {
+    object-fit: cover;
+    width: 400px;
+    height: auto;
+}
+
 #grey-container {
     background-color: #383633;
     padding: 2% 2% 0 2%;
@@ -78,6 +84,19 @@
 
     #brown-container {
         padding: 60px 100px;
+        margin: 0;
+    }
+
+    #hero-image {
+    width: 400px;
+    height: auto;
+    align-self: center;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #brown-container {
+        padding: 60px 60px;
         margin: 0;
     }
 }
