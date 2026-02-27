@@ -6,7 +6,6 @@
 
 .kitchen-container, .basement-container,
 .fencing-container, .decks-container {
-    height: 475px;
     margin: 0;
     padding: 20px 100px;
     font-size: 40px;
@@ -147,23 +146,21 @@
     right: 30px;
 }
 
-
 @media screen and (max-width: 1380px) {
     
     .kitchen-container, .basement-container,
     .fencing-container, .decks-container {
-        height: 700px;
         margin: 0;
         padding: 20px 50px;
         font-size: 40px;
-        text-align: center;
+        text-align: left;
     }
     
     .picture-display {
         display: flex;
-        justify-content: center;
+        justify-content: flex-start;
         flex-direction: row;
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
     }
     
     .picture-display img {
@@ -174,6 +171,21 @@
 }
 
 @media screen and (max-width: 768px) {
+    .kitchen-container, .basement-container,
+    .fencing-container, .decks-container {
+        padding: 20px 15px;
+        text-align: left;
+    }
+
+    .picture-display {
+        justify-content: flex-start;
+    }
+
+    .picture-display img {
+        height: 220px;
+        width: 220px;
+    }
+
     #lightbox-img {
         max-width: 95%;
         max-height: 95%;
@@ -200,10 +212,16 @@
 @media screen and (max-width: 680px) { 
     .kitchen-container, .basement-container,
     .fencing-container, .decks-container {
-        height: 1250px;
-        margin: 0;
-        padding: 20px 100px;
-        font-size: 40px;
-        text-align: center;
+        padding: 20px 10px;
+        text-align: left;
+    }
+
+    .picture-display {
+        justify-content: flex-start;
+    }
+
+    .picture-display img {
+        height: 180px;
+        width: 180px;
     }
 }
