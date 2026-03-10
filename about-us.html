@@ -67,13 +67,13 @@
                     </div>
                 </div>
                 <div class="introduction-section">
-                    <h2 class="stencil-text" id="over-10-years">With over 35 years of experience in residential and commercial construction</h2>
+                    <h2 class="stencil-text reveal" id="over-10-years">With over 35 years of experience in residential and commercial construction</h2>
                     <div class="default-container">
                         <div class="left-side-image" id="about-us-image">
                             <img src="pictures/about-us/peter_truck.jpg" alt="peters truck">
                         </div>
                         <div class="right-side-description">
-                            <span class="noto-serif-regular description" id="about-us-description">
+                            <span class="noto-serif-regular description reveal" id="about-us-description">
                             With over <strong>30 years</strong> of combined experience and 
                             <strong> a decade </strong>serving the Ottawa region, 
                             Meticulous Pete has built a reputation for exceptional quality in residential 
@@ -84,18 +84,18 @@
                     </div>
                 </div>
                 <div class="solid-colour-container" id="grey-container">
-                    <h3 class="merriweather-regular" id="owner-quote">"It's not just another project for our team but helping you call it home!"</h3>
+                    <h3 class="merriweather-regular reveal" id="owner-quote">"It's not just another project for our team but helping you call it home!"</h3>
                     <span class="noto-serif-regular" id="owner-name">Peter Rousseau - Owner of Meticulous Pete Ltd.</span>         
                 </div>
                 <div class="solid-colour-container" id="brown-container">
-                    <h2 class="merriweather-regular" id="cheesy-tagline-1">We don't just build structures...</h2>
+                    <h2 class="merriweather-regular reveal" id="cheesy-tagline-1">We don't just build structures...</h2>
                     <h2 class="merriweather-regular" id="cheesy-tagline-2">...we build lasting relationships with homeowners who trust us with their most important investment.</h2>
                     <div class="default-container">
                         <div class="left-side-image" id="hero-image">
                             <img src="pictures/about-us/about-us-2.jpeg" alt="Roof picture">
                         </div>
                         <div class="right-side">
-                            <span class="noto-serif-regular" id="hero-description">
+                            <span class="noto-serif-regular reveal" id="hero-description">
                                 What sets us apart is our personalized approach and unwavering 
                                 commitment to precision. We take the time to understand your vision, communicate clearly 
                                 throughout the process, and deliver results that exceed expectations. Our satisfied 
@@ -151,6 +151,17 @@
                     document.querySelector('.nav-links').classList.remove('active');
                 });
             });
+            </script>
+            <script>
+                const observer = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            entry.target.classList.add('visible');
+                        }
+                    });
+                });
+
+                document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
             </script>
         </body>
 </html>

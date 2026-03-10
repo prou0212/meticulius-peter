@@ -73,8 +73,8 @@
                             <img src="pictures/services/drywalling.jpg" alt="drywalling image">
                         </div>
                         <div class="right-side-description">
-                            <h2 class="merriweather-regular main-titles">Drywalling</h2>
-                            <span class="noto-serif-regular description">
+                            <h2 class="merriweather-regular main-titles reveal">Drywalling</h2>
+                            <span class="noto-serif-regular description reveal">
                             We deliver exceptional drywall installation and repair services with precision 
                             and attention to detail. Our experienced team handles everything from new 
                             construction drywall installation to patch repairs, texture matching, and complete 
@@ -92,8 +92,8 @@
                 <div id="flooring-section">
                     <div class="default-container">
                         <div class="left-side-description">
-                            <h2 class="merriweather-regular main-titles">Flooring</h2>
-                            <span class="noto-serif-regular description">
+                            <h2 class="merriweather-regular main-titles reveal">Flooring</h2>
+                            <span class="noto-serif-regular description reveal">
                             Transform your space from the ground up with our professional flooring services. 
                             We specialize in the installation of hardwood, laminate, vinyl, tile, and more. 
                             Whether you're looking to upgrade a single room or renovate your entire home, 
@@ -116,8 +116,8 @@
                             <img src="pictures/services/decking.jpg" alt="decking image">
                         </div>
                         <div class="right-side-description">
-                            <h2 class="merriweather-regular main-titles">Decking</h2>
-                            <span class="noto-serif-regular description">
+                            <h2 class="merriweather-regular main-titles reveal">Decking</h2>
+                            <span class="noto-serif-regular description reveal">
                             Expand your living space outdoors with a custom deck built to last. Our team 
                             at Meticulous Pete designs and constructs decks that combine functionality with 
                             aesthetic appeal. From composite materials to traditional wood, we work with 
@@ -134,8 +134,8 @@
                 <div id="basements-section">
                     <div class="default-container">
                         <div class="left-side-description">
-                            <h2 class="merriweather-regular main-titles">Basements</h2>
-                            <span class="noto-serif-regular description">
+                            <h2 class="merriweather-regular main-titles reveal">Basements</h2>
+                            <span class="noto-serif-regular description reveal">
                             Unlock the full potential of your home with a professionally finished basement. 
                             We specialize in transforming underutilized basement spaces into functional, 
                             inviting areas perfect for family rooms, home offices, guest suites, or entertainment 
@@ -157,8 +157,8 @@
                             <img src="pictures/services/kitchen.jpg" alt="Kitchen Image">
                         </div>
                         <div class="right-side-description">
-                            <h2 class="merriweather-regular main-titles">Kitchens</h2>
-                            <span class="noto-serif-regular description">
+                            <h2 class="merriweather-regular main-titles reveal">Kitchens</h2>
+                            <span class="noto-serif-regular description reveal">
                             The kitchen is the heart of the home, and at Meticulous Pete, we create spaces where function 
                             meets style. Our kitchen renovation services include everything from cabinet installation and 
                             countertop fitting to backsplash tiling and fixture upgrades. Whether you're dreaming of a complete 
@@ -173,8 +173,8 @@
                 <div id="bathrooms-section">
                     <div class="default-container">
                         <div class="left-side-description">
-                            <h2 class="merriweather-regular main-titles">Bathrooms</h2>
-                            <span class="noto-serif-regular description">
+                            <h2 class="merriweather-regular main-titles reveal">Bathrooms</h2>
+                            <span class="noto-serif-regular description reveal">
                             Create your personal sanctuary with a beautifully renovated bathroom. Meticulous Pete offers 
                             comprehensive bathroom remodeling services, from modern vanity installations and custom tile work 
                             to shower and tub replacements. We understand that bathrooms require both style and functionality, 
@@ -234,6 +234,18 @@
                     document.querySelector('.nav-links').classList.remove('active');
                 });
             });
+            </script>
+
+            <script>
+                const observer = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            entry.target.classList.add('visible');
+                        }
+                    });
+                });
+
+                document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
             </script>
         </body>
 </html>

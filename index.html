@@ -141,8 +141,8 @@
                             <img src="pictures/index/about-us.jpeg" alt="construction">
                         </div>
                         <div class="right-side-description" id="right-about-us">
-                            <h2 class="merriweather-regular main-titles">Our Story</h2>
-                            <span class="scope-one-regular description" id="about-us-description">
+                            <h2 class="merriweather-regular main-titles reveal">Our Story</h2>
+                            <span class="scope-one-regular description reveal" id="about-us-description">
                             As a team that wears many different hats, 
                             we take pride in being versatile, reliable, and meticulous in every project 
                             we take on. From small home repairs to complete renovations, our focus is always 
@@ -233,7 +233,19 @@
                 }
 
                 setInterval(nextSlide, 10000);
-            </script>      
+            </script>
+            
+            <script>
+                const observer = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            entry.target.classList.add('visible');
+                        }
+                    });
+                });
+
+                document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+            </script>
         </body>
 </html>
 

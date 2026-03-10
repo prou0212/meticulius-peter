@@ -71,7 +71,7 @@
                     <h2 class="merriweather-regular" id="reviews-caption-2">...hear from some our valued customers!</h2>
                 </div>
                 <div class="review-container">
-                    <div class="color-container-review">
+                    <div class="color-container-review reveal">
                         <img src="pictures/reviews/stars.png" alt="stars">
                         <span class="noto-serif-regular">
                             "Peter and his team completely transformed our basement! From the initial 
@@ -82,7 +82,7 @@
                         </span>
                         <span class="scope-one-regular customer-review-name">Anita Dick, Barrhaven</span>
                     </div>
-                    <div class="color-container-review">
+                    <div class="color-container-review reveal">
                         <img src="pictures/reviews/stars.png" alt="stars">
                         <span class="noto-serif-regular">
                             "We hired Peter to install new hardwood flooring throughout our main 
@@ -103,7 +103,7 @@
                         </span>
                         <span class="scope-one-regular customer-review-name">Harry Johnson, Kanata</span>
                     </div>
-                    <div class="color-container-review">
+                    <div class="color-container-review reveal">
                         <img src="pictures/reviews/stars.png" alt="stars">
                         <span class="noto-serif-regular">
                             "Peter did a beautiful job renovating our master bathroom. He helped us choose 
@@ -114,7 +114,7 @@
                         </span>
                         <span class="scope-one-regular customer-review-name">Dixon Butts, Winchester</span>
                     </div>
-                    <div class="color-container-review">
+                    <div class="color-container-review reveal">
                         <img src="pictures/reviews/stars.png" alt="stars">
                         <span class="noto-serif-regular">
                             "I needed a new fence installed quickly before winter arrived, and Peter 
@@ -140,7 +140,7 @@
                         </span>
                         <span class="scope-one-regular customer-review-name">Ben R. Over, Orleans</span>
                     </div>
-                    <div class="color-container-review">
+                    <div class="color-container-review reveal">
                         <img src="pictures/reviews/stars.png" alt="stars">
                         <span class="noto-serif-regular">
                             "We hired Meticulous Pete to install new flooring throughout 
@@ -200,6 +200,17 @@
                     document.querySelector('.nav-links').classList.remove('active');
                 });
             });
+            </script>
+            <script>
+                const observer = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            entry.target.classList.add('visible');
+                        }
+                    });
+                });
+
+                document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
             </script>
         </body>
 </html>
